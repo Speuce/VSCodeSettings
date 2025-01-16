@@ -1,0 +1,89 @@
+{
+  "editor.fontSize": 14,
+  "workbench.iconTheme": "file-icons",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": ["javascript"],
+  "editor.formatOnSave": true,
+  
+  "git.ignoreMissingGitWarning": true,
+  "jupyter.debugJustMyCode": false,
+  "editor.inlineSuggest.enabled": true,
+  "jest.jestCommandLine": "npm test --",
+  "terminal.integrated.fontSize": 15,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false,
+    "yaml": false
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "eslint.debug": true,
+  "eslint.options": {},
+  "prettier.configPath": "./prettierrc.json",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  },
+  "workbench.colorTheme": "Visual Studio Dark - C++",
+  "editor.minimap.enabled": false,
+  "liveshare.anonymousGuestApproval": "accept",
+  "debug.focusWindowOnBreak": false,
+  "git.openRepositoryInParentFolders": "never",
+  "jupyter.askForKernelRestart": false,
+  "search.searchOnType": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "notebook.output.textLineLimit": 100,
+  "nxConsole.showNodeVersionOnStartup": false,
+  "material-ui-snippets.showNotesOnStartup": false,
+  "vim.leader": ",",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["J"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "k"]
+    },
+    {
+      "before": ["<leader>", "n"],
+      "after": ["i", "<CR>", "<ESC>"]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "after": [],
+      "commands": [
+        {
+          "command": "editor.action.showHover",
+          "args": []
+        }
+      ]
+    }
+  ],
+  "editor.stickyScroll.enabled": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.js",
+    "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+    "*.jsx": "${capture}.js",
+    "*.tsx": "${capture}.ts",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+    "*.sqlite": "${capture}.${extname}-*",
+    "*.db": "${capture}.${extname}-*",
+    "*.sqlite3": "${capture}.${extname}-*",
+    "*.db3": "${capture}.${extname}-*",
+    "*.sdb": "${capture}.${extname}-*",
+    "*.s3db": "${capture}.${extname}-*"
+  },
+  "chat.editing.alwaysSaveWithGeneratedChanges": true,
+  "python.languageServer": "Pylance"
+}
