@@ -4,9 +4,10 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "eslint.validate": ["javascript"],
+  "eslint.validate": [
+    "javascript"
+  ],
   "editor.formatOnSave": true,
-  
   "git.ignoreMissingGitWarning": true,
   "jupyter.debugJustMyCode": false,
   "editor.inlineSuggest.enabled": true,
@@ -43,19 +44,39 @@
   "vim.leader": ",",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["J"],
-      "after": ["5", "j"]
+      "before": [
+        "J"
+      ],
+      "after": [
+        "5",
+        "j"
+      ]
     },
     {
-      "before": ["K"],
-      "after": ["5", "k"]
+      "before": [
+        "K"
+      ],
+      "after": [
+        "5",
+        "k"
+      ]
     },
     {
-      "before": ["<leader>", "n"],
-      "after": ["i", "<CR>", "<ESC>"]
+      "before": [
+        "<leader>",
+        "n"
+      ],
+      "after": [
+        "i",
+        "<CR>",
+        "<ESC>"
+      ]
     },
     {
-      "before": ["<leader>", "t"],
+      "before": [
+        "<leader>",
+        "t"
+      ],
       "after": [],
       "commands": [
         {
@@ -85,5 +106,14 @@
     "*.s3db": "${capture}.${extname}-*"
   },
   "chat.editing.alwaysSaveWithGeneratedChanges": true,
-  "python.languageServer": "Pylance"
+  "python.languageServer": "Pylance",
+  "vim.handleKeys": {
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-f>": false,
+    "<C-x>": false,
+    "<C-s>": false,
+    "<C-z>": false,
+    "<C-a>": false
+  }
 }
