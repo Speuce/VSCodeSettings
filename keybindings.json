@@ -5,7 +5,7 @@
     "command": "workbench.action.files.saveFiles"
   },
   {
-    "key": "cmd+o",
+    "key": "ctrl+o",
     "command": "workbench.action.quickOpen"
   },
   {
@@ -76,7 +76,7 @@
     "command": "-workbench.action.showAllSymbols"
   },
   {
-    "key": "cmd+t",
+    "key": "ctrl+t",
     "command": "workbench.action.terminal.new",
     "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
   },
@@ -139,11 +139,6 @@
     "when": "editorTextFocus && vim.active && vim.use<C-s> && !inDebugRepl"
   },
   {
-    "key": "ctrl+s",
-    "command": "workbench.view.scm",
-    "when": "workbench.scm.active"
-  },
-  {
     "key": "ctrl+shift+g",
     "command": "-workbench.view.scm",
     "when": "workbench.scm.active"
@@ -184,7 +179,7 @@
     "when": "terminalFocus && terminalHasBeenCreated && !terminalEditorFocus || terminalFocus && terminalProcessSupported && !terminalEditorFocus"
   },
   {
-    "key": "cmd+enter",
+    "key": "ctrl+enter",
     "command": "editor.action.revealDefinition",
     "when": "editorTextFocus && vim.active && vim.use<C-d> && !inDebugRepl"
   },
@@ -227,5 +222,109 @@
     "key": "alt+cmd+j",
     "command": "-liveshare.join",
     "when": "liveshare:state != 'Joined' && liveshare:state != 'Shared'"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-workbench.action.showAllSymbols"
+  },
+  {
+    "key": "ctrl+alt+v",
+    "command": "-workbench.action.editorDictation.start",
+    "when": "hasSpeechProvider && !editorReadonly && !speechToTextInProgress"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-extension.vim_ctrl+w",
+    "when": "editorTextFocus && vim.active && vim.use<C-w> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "-extension.vim_ctrl+o",
+    "when": "editorTextFocus && vim.active && vim.use<C-o> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+shift+o",
+    "command": "workbench.action.files.openFile",
+    "when": "true"
+  },
+  {
+    "key": "ctrl+o",
+    "command": "-workbench.action.files.openFile",
+    "when": "true"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-workbench.action.chat.startVoiceChat",
+    "when": "chatIsEnabled && hasSpeechProvider && inChatInput && !chatSessionRequestInProgress && !editorFocus && !notebookEditorFocused && !scopedVoiceChatGettingReady && !speechToTextInProgress || chatIsEnabled && hasSpeechProvider && inlineChatFocused && !chatSessionRequestInProgress && !editorFocus && !notebookEditorFocused && !scopedVoiceChatGettingReady && !speechToTextInProgress"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-extension.vim_ctrl+i",
+    "when": "editorTextFocus && vim.active && vim.use<C-i> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+i",
+    "command": "-toggleSuggestionDetails",
+    "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+win+h",
+    "command": "workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "ctrl+k ctrl+left",
+    "command": "-workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "alt+win+l",
+    "command": "workbench.action.focusRightGroup"
+  },
+  {
+    "key": "ctrl+k ctrl+right",
+    "command": "-workbench.action.focusRightGroup"
+  },
+  {
+    "key": "ctrl+shift+h",
+    "command": "-workbench.action.replaceInFiles"
+  },
+  {
+    "key": "ctrl+alt+.",
+    "command": "-github.copilot.chat.rerunWithCopilotDebug",
+    "when": "github.copilot-chat.activated && terminalFocus && terminalShellIntegrationEnabled && !terminalAltBufferActive"
+  },
+  {
+    "key": "ctrl+alt+.",
+    "command": "-workbench.action.chat.openModelPicker",
+    "when": "chatIsEnabled && inChatInput"
+  },
+  {
+    "key": "ctrl+alt+.",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+.",
+    "command": "-editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "-extension.vim_ctrl+c",
+    "when": "editorTextFocus && vim.active && vim.overrideCtrlC && vim.use<C-c> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "-extension.vim_ctrl+v",
+    "when": "editorTextFocus && vim.active && vim.use<C-v> && !inDebugRepl"
   }
 ]
