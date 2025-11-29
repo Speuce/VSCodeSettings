@@ -4,9 +4,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "eslint.validate": [
-    "javascript"
-  ],
+  "eslint.validate": ["javascript"],
   "editor.formatOnSave": true,
   "git.ignoreMissingGitWarning": true,
   "jupyter.debugJustMyCode": false,
@@ -23,18 +21,17 @@
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "eslint.debug": true,
   "eslint.options": {},
-  "prettier.configPath": "./prettierrc.json",
+  "prettier.configPath": "./.prettierrc.json",
   "git.autofetch": true,
   "git.confirmSync": false,
   "[python]": {
     "editor.formatOnType": true,
     "editor.formatOnSave": true
   },
-  "workbench.colorTheme": "Visual Studio Dark - C++",
   "editor.minimap.enabled": false,
   "liveshare.anonymousGuestApproval": "accept",
   "debug.focusWindowOnBreak": false,
-  "git.openRepositoryInParentFolders": "never",
+  "git.openRepositoryInParentFolders": "always",
   "jupyter.askForKernelRestart": false,
   "search.searchOnType": false,
   "security.workspace.trust.untrustedFiles": "open",
@@ -44,39 +41,19 @@
   "vim.leader": ",",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "J"
-      ],
-      "after": [
-        "5",
-        "j"
-      ]
+      "before": ["J"],
+      "after": ["5", "j"]
     },
     {
-      "before": [
-        "K"
-      ],
-      "after": [
-        "5",
-        "k"
-      ]
+      "before": ["K"],
+      "after": ["5", "k"]
     },
     {
-      "before": [
-        "<leader>",
-        "n"
-      ],
-      "after": [
-        "i",
-        "<CR>",
-        "<ESC>"
-      ]
+      "before": ["<leader>", "n"],
+      "after": ["i", "<CR>", "<ESC>"]
     },
     {
-      "before": [
-        "<leader>",
-        "t"
-      ],
+      "before": ["<leader>", "t"],
       "after": [],
       "commands": [
         {
@@ -115,5 +92,12 @@
     "<C-s>": false,
     "<C-z>": false,
     "<C-a>": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "jest.runMode": "on-demand",
+  "debug.javascript.unmapMissingSources": true,
+  "workbench.colorTheme": "Default Light Modern",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
